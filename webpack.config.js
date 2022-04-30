@@ -13,6 +13,10 @@ module.exports = {
         filename: 'principal.js',
         path: __dirname + '/public'
     },
+    devServer: {
+        contentBase: "./public",
+        port: 9000
+    },
     Optimization: {
         minimizer: [
             new OptimizeCSSAssetsPlugin({})
